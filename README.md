@@ -31,9 +31,9 @@ To run the application:
 ```bash
 mvn spring-boot:run
 ```
-The application will start on http://localhost:8080 by default.
-Configuration
-application.properties
+The application will start on http://localhost:8080 by default.<br>
+Configuration<br>
+application.properties<br>
 Make sure to configure the application.properties file as shown below:
 ```bash
 # Application settings
@@ -65,38 +65,42 @@ jwt.secret=yourSecretKeyHere
 ```
 Replace yourSecretKeyHere with a secure, randomly generated string.
 
-Dependencies
+Dependencies<br>
 This project uses the following dependencies:
 
-Spring Boot (Web, Data MongoDB, Security, Validation)
-Lombok (for reducing boilerplate code)
-JJWT (for JWT token generation and validation)
-Springdoc OpenAPI (for automatic generation of API documentation)
-API Documentation
+Spring Boot (Web, Data MongoDB, Security, Validation)<br>
+Lombok (for reducing boilerplate code)<br>
+JJWT (for JWT token generation and validation)<br>
+Springdoc OpenAPI (for automatic generation of API documentation)<br>
+API Documentation<br>
 Once the application is running, you can access the Swagger UI at the following URL:
 ```bash
 http://localhost:8080/api/doc/swagger-ui.html
 ```
 You can view the API documentation, try out the different endpoints, and make requests directly from the browser.
 
-Endpoints
-Authentication
-POST /api/auth/login - Authenticate and receive a JWT token.
-CRUD Operations for Items
-GET /api/items - Get all items.
-GET /api/items/{id} - Get an item by ID.
-POST /api/items - Create a new item.
-PUT /api/items/{id} - Update an existing item.
-DELETE /api/items/{id} - Delete an item by ID.
-Testing
-Unit Tests
-This project includes unit tests for the service and repository layers. To run the tests, use the following Maven command:
+Endpoints<br>
+Authentication<br>
+POST /api/auth/login - Authenticate and receive a JWT token.<br>
+CRUD Operations for Items<br>
+GET /api/items - Get all items.<br>
+GET /api/items/{id} - Get an item by ID.<br>
+POST /api/items - Create a new item.<br>
+PUT /api/items/{id} - Update an existing item.<br>
+DELETE /api/items/{id} - Delete an item by ID.<br>
+Testing<br>
+Unit Tests<br>
+
+This project includes unit tests for the service and repository layers.<br>
+To run the tests, use the following Maven command:
 ```bash
 mvn test
 
 ```
 JWT Authentication
-The API requires JWT authentication for most of the endpoints. You can obtain a JWT token by sending a POST request to the /api/auth/login endpoint with your credentials. The token should then be included in the Authorization header for subsequent requests.
+The API requires JWT authentication for most of the endpoints.<br>
+You can obtain a JWT token by sending a POST request to the /api/auth/login endpoint with your credentials.<br>
+The token should then be included in the Authorization header for subsequent requests.
 
 Example:
 ```bash
